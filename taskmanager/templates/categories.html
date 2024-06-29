@@ -11,4 +11,20 @@
     </div>
 </div>
 
+<div class="row">
+    {% for category in categories %}
+    <div class="col s12 m6 l3"> <!-- s12=displays across the screen on small devices, m6=half the screen on medium-->
+      <div class="card light-blue darken-4 center-align">
+        <div class="card-content white-text">
+          <span class="card-title">{{ category.categaory_name }}</span> <!-- if wanted to display primary key, use category.id instead -->
+        </div>
+        <div class="card-action">
+          <a href="btn green accent-4">Edit</a>
+          <a href="btn red">Delete</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
 {% endblock %}
