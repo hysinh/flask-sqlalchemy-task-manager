@@ -19,7 +19,7 @@
           <span class="card-title">{{ category.category_name }}</span> <!-- if wanted to display primary key, use category.id instead -->
         </div>
         <div class="card-action">
-          <a href="#" class="btn green accent-4">Edit</a>
+          <a href="{{ url for('edit_category', category_id=category.id)}}" class="btn green accent-4">Edit</a>
           <a href="#" class="btn red">Delete</a>
         </div>
       </div>
